@@ -4,6 +4,8 @@ library(writexl)
 library(R.utils)
 library(data.table)
 
+options(scipen = 999)
+options(dplyr.summarise.inform = FALSE)
 
 
 bankersround <- function(number, precision = 1, eps = 2^-52, tolerance = TRUE) {
